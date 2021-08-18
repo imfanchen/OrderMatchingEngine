@@ -86,29 +86,6 @@ namespace AkunaHackerRank {
         public void Cancel(string orderId) {
             if (!orders.ContainsKey(orderId)) return;
             var order = orders[orderId];
-            /* Replace below with a hashset to keep track of cancellation
-             * for better performance. (trade runtime with space)
-            if (order.OrderSide == ORDERSIDE_SELL) {
-                var minHeap = new PriorityQueue<SellOrder>();
-                while (asks.Any()) {
-                    var ask = asks.Dequeue();
-                    if (ask.OrderId != orderId) {
-                        minHeap.Enqueue(ask);
-                    }
-                }
-                asks = minHeap;
-            }
-            if (order.OrderSide == ORDERSIDE_BUY) {
-                var maxHeap = new PriorityQueue<BuyOrder>();
-                while (bids.Any()) {
-                    var ask = bids.Dequeue();
-                    if (ask.OrderId != orderId) {
-                        maxHeap.Enqueue(ask);
-                    }
-                }
-                bids = maxHeap;
-            }
-            */
             cancellations.Add((orderId, order.Timestamp));
             orders.Remove(orderId);
         }
