@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AkunaHackerRank {
+namespace OrderMatchingEngine {
 
     public class Program {
 
