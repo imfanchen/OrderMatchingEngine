@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AkunaHackerRank {
+namespace OrderMatchingEngine {
 
     public class MatchingEngine {
         public const string ORDERSIDE_BUY = "BUY";
