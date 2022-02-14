@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AkunaHackerRank {
+namespace OrderMatchingEngine {
 
     /// <summary>
     /// This is my own implementation of PriorityQueue, because only .NET 6 contains build-in PriorityQueue data structure.
